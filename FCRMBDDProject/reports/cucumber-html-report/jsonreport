@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Free CRM Login Page",
+        "description": "",
+        "id": "to-launch-crm-application-home-page;free-crm-login-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8088334400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on free crm login page",
+            "match": {
+              "location": "LoginStepDefinition.setup()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149959900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters email \"anu1311balas@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "anu1311balas@gmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinition.enterEmail(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101550700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters password \"Anajay123$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Anajay123$",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDefinition.enterPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70216200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1559040400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on free crm home page",
+            "match": {
+              "location": "LoginStepDefinition.loggedOn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 668063600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Launch CRM Application Home Page",
+    "description": "",
+    "id": "to-launch-crm-application-home-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/login.feature"
+  }
+]
