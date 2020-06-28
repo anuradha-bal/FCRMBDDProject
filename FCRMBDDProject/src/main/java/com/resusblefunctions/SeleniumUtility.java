@@ -28,7 +28,7 @@ public class SeleniumUtility extends Library
         try {
             Thread.sleep(1000);
             File source = ts.getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(source, new File("reports/Screemshots/" + fileName));
+            FileUtils.copyFile(source, new File("reports/Screenshots/" + fileName));
         } catch (InterruptedException e1) {
             e1.printStackTrace();
         } catch (IOException e) {
