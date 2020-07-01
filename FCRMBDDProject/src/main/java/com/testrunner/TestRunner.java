@@ -7,7 +7,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features/login.feature", plugin =
+@CucumberOptions(features = "src/test/resources/Features/form3.feature", plugin =
 {
  "pretty",
  "html:reports/cucumber-html-report",

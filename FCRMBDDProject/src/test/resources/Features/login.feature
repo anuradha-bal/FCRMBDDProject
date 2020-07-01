@@ -11,4 +11,4 @@ Then close the browser
 
 Examples:
 |email|password|
-|abc@gmail.com|abc|
+|anu1311balas@gmail.com|Anajay123$|

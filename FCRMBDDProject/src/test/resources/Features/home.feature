@@ -2,8 +2,8 @@ Feature: To test the Home Page
 
 Background: Login to Free crm
 Given user is on free crm login page
-When user enters email "abc@gmail.com"
-And user enters password "abc"
+When user enters email "anu1311balas@gmail.com"
+And user enters password "Anajay123$"
 And user clicks on login button
 Then user is on free crm home page
 
