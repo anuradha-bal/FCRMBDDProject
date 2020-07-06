@@ -2,8 +2,6 @@ package com.baseclass;
 
 import com.resusblefunctions.SeleniumUtility;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,14 +20,14 @@ public class Library
 {
     protected static SeleniumUtility seleniumutility;
     protected static WebDriver driver;
-    protected Logger log = Logger.getLogger(Library.class);
+    // protected Logger log = Logger.getLogger(Library.class);
 
     private Properties prop;
 
     public void launchApplication()
     {
         try {
-            Logger log = (Logger) LogManager.getLogger(Library.class.getName());
+            // Logger log = (Logger) LogManager.getLogger(Library.class.getName());
             FileInputStream fis = new FileInputStream("src/test/resources/Configuration/config.properties");
             prop = new Properties();
             prop.load(fis);
@@ -45,7 +43,7 @@ public class Library
             } else if (browser.equalsIgnoreCase("chrome")) {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
-                log.info("chrome Browser is launched ");
+                // log.info("chrome Browser is launched ");
             } else if (browser.equals("headless")) {
                 driver = new HtmlUnitDriver();
             } else {

@@ -11,7 +11,6 @@ import cucumber.api.junit.Cucumber;
 {
  "pretty",
  "html:reports/cucumber-html-report",
- "json:reports/cucumber-html-report/jsonreport",
  "junit:reports/cucumber-html-report/xml",
  "com.cucumber.listener.ExtentCucumberFormatter:reports/Extentreports/Extentreport.html"
 }, glue =
