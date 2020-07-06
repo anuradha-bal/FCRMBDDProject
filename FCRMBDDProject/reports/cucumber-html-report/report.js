@@ -1,33 +1,27 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Features/form3.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Features/task.feature");
 formatter.feature({
   "line": 1,
-  "name": "To test the Form Page",
-  "description": "Description: The purpose is to fill the Forms Page",
-  "id": "to-test-the-form-page",
+  "name": "To test the Task Page",
+  "description": "Description: The purpose is to fill the Tasks Page",
+  "id": "to-test-the-task-page",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 14,
-  "name": "To fill_the_Form Page",
+  "name": "To fill_the_task Page",
   "description": "",
-  "id": "to-test-the-form-page;to-fill-the-form-page",
+  "id": "to-test-the-task-page;to-fill-the-task-page",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 13,
-      "name": "@First"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 15,
-  "name": "fill_the_form details \"\u003cname\u003e\" and  \"\u003cisActive\u003e\" and \"\u003cintro\u003e\" and \"\u003ccompletion\u003e\"",
+  "name": "fill_the_task details \"\u003ctitle\u003e\" and \"\u003cduedate\u003e\" and \"\u003cclosedate\u003e\" and\"\u003cdescription\u003e\" and \"\u003ctype\u003e\" and \"\u003cstatus\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "save form",
+  "name": "save task",
   "keyword": "Then "
 });
 formatter.step({
@@ -44,37 +38,31 @@ formatter.examples({
   "line": 20,
   "name": "",
   "description": "",
-  "id": "to-test-the-form-page;to-fill-the-form-page;",
+  "id": "to-test-the-task-page;to-fill-the-task-page;",
   "rows": [
     {
       "cells": [
-        "name",
-        "isActive",
-        "intro",
-        "completion"
+        "title",
+        "duedate",
+        "closedate",
+        "description",
+        "type",
+        "status"
       ],
       "line": 21,
-      "id": "to-test-the-form-page;to-fill-the-form-page;;1"
+      "id": "to-test-the-task-page;to-fill-the-task-page;;1"
     },
     {
       "cells": [
-        "Anu Form",
-        "False",
-        "Introduction",
-        "comments"
+        "Anu title",
+        "06/25/2019 09:30",
+        "12/30/2019 10:30",
+        "comments",
+        "Complaint",
+        "Awaiting input"
       ],
       "line": 22,
-      "id": "to-test-the-form-page;to-fill-the-form-page;;2"
-    },
-    {
-      "cells": [
-        "Ajay",
-        "True",
-        "Details",
-        "comments"
-      ],
-      "line": 23,
-      "id": "to-test-the-form-page;to-fill-the-form-page;;3"
+      "id": "to-test-the-task-page;to-fill-the-task-page;;2"
     }
   ],
   "keyword": "Examples"
@@ -113,19 +101,19 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "click navigate to forms page",
+  "name": "click navigate to task page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "click add new form",
+  "name": "click add new task",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginStepDefinition.setup()"
 });
 formatter.result({
-  "duration": 8535152400,
+  "duration": 8791668900,
   "status": "passed"
 });
 formatter.match({
@@ -138,7 +126,7 @@ formatter.match({
   "location": "LoginStepDefinition.enterEmail(String)"
 });
 formatter.result({
-  "duration": 301981500,
+  "duration": 326909400,
   "status": "passed"
 });
 formatter.match({
@@ -151,65 +139,61 @@ formatter.match({
   "location": "LoginStepDefinition.enterPassword(String)"
 });
 formatter.result({
-  "duration": 156003000,
+  "duration": 158017200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.login()"
 });
 formatter.result({
-  "duration": 87788800,
+  "duration": 92693000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.loggedOn()"
 });
 formatter.result({
-  "duration": 1962715100,
+  "duration": 2190947900,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomeStepDefinition.clickForms()"
+  "location": "HomeStepDefinition.clickTasks()"
 });
 formatter.result({
-  "duration": 1502449400,
+  "duration": 1519544400,
   "status": "passed"
 });
 formatter.match({
-  "location": "FormStepDefinition.click_add_new_form()"
+  "location": "TaskStepDefinition.click_add_new_task()"
 });
 formatter.result({
-  "duration": 108145200,
+  "duration": 147550800,
   "status": "passed"
 });
 formatter.scenario({
   "line": 22,
-  "name": "To fill_the_Form Page",
+  "name": "To fill_the_task Page",
   "description": "",
-  "id": "to-test-the-form-page;to-fill-the-form-page;;2",
+  "id": "to-test-the-task-page;to-fill-the-task-page;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 13,
-      "name": "@First"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 15,
-  "name": "fill_the_form details \"Anu Form\" and  \"False\" and \"Introduction\" and \"comments\"",
+  "name": "fill_the_task details \"Anu title\" and \"06/25/2019 09:30\" and \"12/30/2019 10:30\" and\"comments\" and \"Complaint\" and \"Awaiting input\"",
   "matchedColumns": [
     0,
     1,
     2,
-    3
+    3,
+    4,
+    5
   ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "save form",
+  "name": "save task",
   "keyword": "Then "
 });
 formatter.step({
@@ -225,236 +209,55 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "Anu Form",
+      "val": "Anu title",
       "offset": 23
     },
     {
-      "val": "False",
+      "val": "06/25/2019 09:30",
       "offset": 39
     },
     {
-      "val": "Introduction",
-      "offset": 51
+      "val": "12/30/2019 10:30",
+      "offset": 62
     },
     {
       "val": "comments",
-      "offset": 70
+      "offset": 84
+    },
+    {
+      "val": "Complaint",
+      "offset": 99
+    },
+    {
+      "val": "Awaiting input",
+      "offset": 115
     }
   ],
-  "location": "FormStepDefinition.fill_the_form_details(String,String,String,String)"
+  "location": "TaskStepDefinition.fill_task_details(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 601853600,
+  "duration": 4793615000,
   "status": "passed"
 });
 formatter.match({
-  "location": "FormStepDefinition.save_form()"
+  "location": "TaskStepDefinition.save_task()"
 });
 formatter.result({
-  "duration": 87850000,
+  "duration": 97496500,
   "status": "passed"
 });
 formatter.match({
   "location": "FormStepDefinition.take_Screenshot()"
 });
 formatter.result({
-  "duration": 1374514200,
+  "duration": 1412255000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.tearDown()"
 });
 formatter.result({
-  "duration": 830138000,
-  "status": "passed"
-});
-formatter.background({
-  "line": 4,
-  "name": "User is logged in",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 5,
-  "name": "user is on free crm login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "user enters email \"anu1311balas@gmail.com\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "user enters password \"Anajay123$\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "user clicks on login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "user is on free crm home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "click navigate to forms page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "click add new form",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepDefinition.setup()"
-});
-formatter.result({
-  "duration": 7643322500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "anu1311balas@gmail.com",
-      "offset": 19
-    }
-  ],
-  "location": "LoginStepDefinition.enterEmail(String)"
-});
-formatter.result({
-  "duration": 247428800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Anajay123$",
-      "offset": 22
-    }
-  ],
-  "location": "LoginStepDefinition.enterPassword(String)"
-});
-formatter.result({
-  "duration": 154139200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.login()"
-});
-formatter.result({
-  "duration": 80282200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.loggedOn()"
-});
-formatter.result({
-  "duration": 1742660900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HomeStepDefinition.clickForms()"
-});
-formatter.result({
-  "duration": 1493628100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FormStepDefinition.click_add_new_form()"
-});
-formatter.result({
-  "duration": 127439300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "To fill_the_Form Page",
-  "description": "",
-  "id": "to-test-the-form-page;to-fill-the-form-page;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 13,
-      "name": "@First"
-    }
-  ]
-});
-formatter.step({
-  "line": 15,
-  "name": "fill_the_form details \"Ajay\" and  \"True\" and \"Details\" and \"comments\"",
-  "matchedColumns": [
-    0,
-    1,
-    2,
-    3
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "save form",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "take Screenshot",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Ajay",
-      "offset": 23
-    },
-    {
-      "val": "True",
-      "offset": 35
-    },
-    {
-      "val": "Details",
-      "offset": 46
-    },
-    {
-      "val": "comments",
-      "offset": 60
-    }
-  ],
-  "location": "FormStepDefinition.fill_the_form_details(String,String,String,String)"
-});
-formatter.result({
-  "duration": 448554400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FormStepDefinition.save_form()"
-});
-formatter.result({
-  "duration": 71240900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FormStepDefinition.take_Screenshot()"
-});
-formatter.result({
-  "duration": 1392517600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.tearDown()"
-});
-formatter.result({
-  "duration": 685298300,
+  "duration": 774474500,
   "status": "passed"
 });
 });

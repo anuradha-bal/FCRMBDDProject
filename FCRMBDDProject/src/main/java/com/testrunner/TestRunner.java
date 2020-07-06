@@ -7,11 +7,12 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features/form3.feature", plugin =
+@CucumberOptions(features = "src/test/resources/Features/task.feature", plugin =
 {
  "pretty",
  "html:reports/cucumber-html-report",
  "json:reports/cucumber-html-report/jsonreport",
+ "junit:reports/cucumber-html-report/xml",
  "com.cucumber.listener.ExtentCucumberFormatter:reports/Extentreports/Extentreport.html"
 }, glue =
 {

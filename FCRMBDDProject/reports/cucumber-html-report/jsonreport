@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8535152400,
+              "duration": 8791668900,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 301981500,
+              "duration": 326909400,
               "status": "passed"
             },
             "line": 6,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 156003000,
+              "duration": 158017200,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 87788800,
+              "duration": 92693000,
               "status": "passed"
             },
             "line": 8,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 1962715100,
+              "duration": 2190947900,
               "status": "passed"
             },
             "line": 9,
@@ -83,25 +83,25 @@
           },
           {
             "result": {
-              "duration": 1502449400,
+              "duration": 1519544400,
               "status": "passed"
             },
             "line": 10,
-            "name": "click navigate to forms page",
+            "name": "click navigate to task page",
             "match": {
-              "location": "HomeStepDefinition.clickForms()"
+              "location": "HomeStepDefinition.clickTasks()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 108145200,
+              "duration": 147550800,
               "status": "passed"
             },
             "line": 11,
-            "name": "click add new form",
+            "name": "click add new task",
             "match": {
-              "location": "FormStepDefinition.click_add_new_form()"
+              "location": "TaskStepDefinition.click_add_new_task()"
             },
             "keyword": "Then "
           }
@@ -109,63 +109,73 @@
       },
       {
         "line": 22,
-        "name": "To fill_the_Form Page",
+        "name": "To fill_the_task Page",
         "description": "",
-        "id": "to-test-the-form-page;to-fill-the-form-page;;2",
+        "id": "to-test-the-task-page;to-fill-the-task-page;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 601853600,
+              "duration": 4793615000,
               "status": "passed"
             },
             "line": 15,
-            "name": "fill_the_form details \"Anu Form\" and  \"False\" and \"Introduction\" and \"comments\"",
+            "name": "fill_the_task details \"Anu title\" and \"06/25/2019 09:30\" and \"12/30/2019 10:30\" and\"comments\" and \"Complaint\" and \"Awaiting input\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Anu Form",
+                  "val": "Anu title",
                   "offset": 23
                 },
                 {
-                  "val": "False",
+                  "val": "06/25/2019 09:30",
                   "offset": 39
                 },
                 {
-                  "val": "Introduction",
-                  "offset": 51
+                  "val": "12/30/2019 10:30",
+                  "offset": 62
                 },
                 {
                   "val": "comments",
-                  "offset": 70
+                  "offset": 84
+                },
+                {
+                  "val": "Complaint",
+                  "offset": 99
+                },
+                {
+                  "val": "Awaiting input",
+                  "offset": 115
                 }
               ],
-              "location": "FormStepDefinition.fill_the_form_details(String,String,String,String)"
+              "location": "TaskStepDefinition.fill_task_details(String,String,String,String,String,String)"
             },
             "matchedColumns": [
               0,
               1,
               2,
-              3
+              3,
+              4,
+              5
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 87850000,
+              "duration": 97496500,
               "status": "passed"
             },
             "line": 16,
-            "name": "save form",
+            "name": "save task",
             "match": {
-              "location": "FormStepDefinition.save_form()"
+              "location": "TaskStepDefinition.save_task()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1374514200,
+              "duration": 1412255000,
               "status": "passed"
             },
             "line": 17,
@@ -177,7 +187,7 @@
           },
           {
             "result": {
-              "duration": 830138000,
+              "duration": 774474500,
               "status": "passed"
             },
             "line": 18,
@@ -186,213 +196,14 @@
               "location": "LoginStepDefinition.tearDown()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@First"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "User is logged in",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7643322500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on free crm login page",
-            "match": {
-              "location": "LoginStepDefinition.setup()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 247428800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters email \"anu1311balas@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "anu1311balas@gmail.com",
-                  "offset": 19
-                }
-              ],
-              "location": "LoginStepDefinition.enterEmail(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 154139200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters password \"Anajay123$\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Anajay123$",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginStepDefinition.enterPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 80282200,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "LoginStepDefinition.login()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1742660900,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user is on free crm home page",
-            "match": {
-              "location": "LoginStepDefinition.loggedOn()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1493628100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "click navigate to forms page",
-            "match": {
-              "location": "HomeStepDefinition.clickForms()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 127439300,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "click add new form",
-            "match": {
-              "location": "FormStepDefinition.click_add_new_form()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 23,
-        "name": "To fill_the_Form Page",
-        "description": "",
-        "id": "to-test-the-form-page;to-fill-the-form-page;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 448554400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "fill_the_form details \"Ajay\" and  \"True\" and \"Details\" and \"comments\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Ajay",
-                  "offset": 23
-                },
-                {
-                  "val": "True",
-                  "offset": 35
-                },
-                {
-                  "val": "Details",
-                  "offset": 46
-                },
-                {
-                  "val": "comments",
-                  "offset": 60
-                }
-              ],
-              "location": "FormStepDefinition.fill_the_form_details(String,String,String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 71240900,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "save form",
-            "match": {
-              "location": "FormStepDefinition.save_form()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1392517600,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "take Screenshot",
-            "match": {
-              "location": "FormStepDefinition.take_Screenshot()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 685298300,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginStepDefinition.tearDown()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@First"
           }
         ]
       }
     ],
-    "name": "To test the Form Page",
-    "description": "Description: The purpose is to fill the Forms Page",
-    "id": "to-test-the-form-page",
+    "name": "To test the Task Page",
+    "description": "Description: The purpose is to fill the Tasks Page",
+    "id": "to-test-the-task-page",
     "keyword": "Feature",
-    "uri": "src/test/resources/Features/form3.feature"
+    "uri": "src/test/resources/Features/task.feature"
   }
 ]

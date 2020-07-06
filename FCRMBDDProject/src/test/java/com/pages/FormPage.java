@@ -12,11 +12,10 @@ public class FormPage
     @FindBy(name = "name")
     private WebElement name;
 
-    @FindBy(xpath = "//*[@id='ui']/div/div/div/div/div/form/div/div/div/input[contains(@class,'hidden') and contains(@name,'active')]")
+    @FindBy(xpath = "*//input[@class ='hidden' and @name='active']")
     private WebElement active;
 
-    // @FindBy(xpath = "//*div/label[contains(text(), 'Active')]") // Relative not working
-    @FindBy(xpath = "//*[@id='ui']/div/div/div/div/div/form/div/div/div/label[contains(text(),'Active')]")
+    @FindBy(xpath = "*//label[text()='Active']")
     private WebElement activeFlag;
 
     @FindBy(name = "intro")
@@ -25,7 +24,7 @@ public class FormPage
     @FindBy(name = "outro")
     private WebElement completion;
 
-    @FindBy(xpath = "//*[@id=\"dashboard-toolbar\"]/div/div/button[contains(text(), 'Save')]")
+    @FindBy(xpath = "*//button[contains(text(), 'Save')]")
     private WebElement saveForm;
 
     public FormPage(WebDriver driver)

@@ -10,7 +10,7 @@ Then user is on free crm home page
 Then click navigate to forms page
 Then click add new form
 
-@First
+
 Scenario Outline: To fill_the_Form Page
 Then fill_the_form details "<name>" and  "<isActive>" and "<intro>" and "<completion>"
 Then save form
@@ -19,5 +19,5 @@ Then close the browser
 
 Examples:
 |name|isActive|intro|completion|
-|Anu Form|False|Introduction|comments|
+|Anu Form|False|Introduction|Comments|
 |Ajay|True|Details|comments|

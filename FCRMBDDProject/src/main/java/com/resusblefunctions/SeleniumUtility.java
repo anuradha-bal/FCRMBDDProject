@@ -7,11 +7,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class SeleniumUtility extends Library
 {
@@ -33,6 +35,21 @@ public class SeleniumUtility extends Library
             e1.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void setByVisibleText(List<WebElement> dropdowns, String visibleText)
+    {
+        // Used for controls with span
+        if (dropdowns == null || dropdowns.size() == 0) {
+            return;
+        }
+
+        for (WebElement item : dropdowns) {
+            if (item.getText().equals(visibleText)) {
+                item.click();
+                break;
+            }
         }
     }
 

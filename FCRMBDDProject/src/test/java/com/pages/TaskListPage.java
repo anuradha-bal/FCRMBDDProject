@@ -5,14 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class FormListPage
+public class TaskListPage
 {
     private WebDriver driver;
 
     @FindBy(xpath = "*//button[contains(text(), 'New')]")
-    private WebElement newForm;
+    private WebElement newTask;
 
-    public FormListPage(WebDriver driver)
+    public TaskListPage(WebDriver driver)
     {
         this.driver = driver;
 
@@ -20,8 +20,8 @@ public class FormListPage
         PageFactory.initElements(driver, this);
     }
 
-    public void newForm()
+    public void newTask()
     {
-        this.newForm.click();
+        this.newTask.click();
     }
 }

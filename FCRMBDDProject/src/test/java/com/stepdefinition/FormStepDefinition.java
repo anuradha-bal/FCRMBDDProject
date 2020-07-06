@@ -65,6 +65,6 @@ public class FormStepDefinition extends Library
     @Then("^take Screenshot$")
     public void take_Screenshot()
     {
-        seleniumutility.takeScreenshot("Form.jpg");
+        seleniumutility.takeScreenshot("Form.png");
     }
 }

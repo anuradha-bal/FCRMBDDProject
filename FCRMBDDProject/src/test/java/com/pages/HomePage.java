@@ -9,25 +9,25 @@ public class HomePage
 {
     private WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"main-nav\"]/a/span[contains(text(), 'Tasks')]")
+    @FindBy(xpath = "//span[contains(text(), 'Tasks')]")
     private WebElement tasks;
 
-    @FindBy(xpath = "//*[@id=\"main-nav\"]/a/span[contains(text(), 'Cases')]")
+    @FindBy(xpath = "//span[contains(text(), 'Cases')]")
     private WebElement cases;
 
-    @FindBy(xpath = "//*[@id=\"main-nav\"]/a/span[contains(text(), 'Calls')]")
+    @FindBy(xpath = "//span[contains(text(), 'Calls')]")
     private WebElement calls;
 
-    @FindBy(xpath = "//*[@id=\"main-nav\"]/a/span[contains(text(), 'Documents')]")
+    @FindBy(xpath = "//span[contains(text(), 'Documents')]")
     private WebElement docs;
 
-    @FindBy(xpath = "//*[@id=\"main-nav\"]/a/span[contains(text(), 'Email')]")
+    @FindBy(xpath = "//span[contains(text(), 'Email')]")
     private WebElement emails;
 
-    @FindBy(xpath = "//*[@id=\"main-nav\"]/a/span[contains(text(), 'Campaigns')]")
+    @FindBy(xpath = "//span[contains(text(), 'Campaigns')]")
     private WebElement campaigns;
 
-    @FindBy(xpath = "//*[@id=\"main-nav\"]/a/span[contains(text(), 'Forms')]")
+    @FindBy(xpath = "//span[contains(text(), 'Forms')]")
     private WebElement forms;
 
     public HomePage(WebDriver driver)

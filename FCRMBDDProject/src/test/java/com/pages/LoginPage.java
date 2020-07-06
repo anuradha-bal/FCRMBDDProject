@@ -16,7 +16,7 @@ public class LoginPage
     @FindBy(name = "password")
     private WebElement password;
 
-    @FindBy(xpath = ".//*[@class=\"ui large form\"]/div/div[@class='ui fluid large blue submit button']")
+    @FindBy(xpath = "*//div[@class='ui fluid large blue submit button']")
     private WebElement login;
 
     public LoginPage(WebDriver driver)

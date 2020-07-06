@@ -1,1 +1,4 @@
 /target/
+/reports/cucumber-html-report/*
+/reports/Extentreports/*
+/reports/Screenshots/*
