@@ -236,3 +236,33 @@
 2020-07-07 14:39:06,738 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
 2020-07-07 14:39:06,752 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
 2020-07-07 14:39:10,222 - FCRMBDDProject -INFO - chrome Browser is launched 
+2020-07-07 14:41:08,921 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2020-07-07 14:41:08,924 - io.github.bonigarcia.wdm.WebDriverManager -INFO - ====> http://tiny.cc/wdm-survey <====
+2020-07-07 14:41:09,258 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
+2020-07-07 14:41:09,277 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-07-07 14:41:12,774 - FCRMBDDProject -INFO - chrome Browser is launched 
+2020-07-07 14:52:48,420 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2020-07-07 14:52:48,424 - io.github.bonigarcia.wdm.WebDriverManager -INFO - ====> http://tiny.cc/wdm-survey <====
+2020-07-07 14:52:48,785 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
+2020-07-07 14:52:48,799 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-07-07 14:52:52,383 - FCRMBDDProject -INFO - chrome Browser is launched 
+2020-07-07 14:55:14,076 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2020-07-07 14:55:14,078 - io.github.bonigarcia.wdm.WebDriverManager -INFO - ====> http://tiny.cc/wdm-survey <====
+2020-07-07 14:55:14,430 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
+2020-07-07 14:55:14,442 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-07-07 14:55:17,969 - FCRMBDDProject -INFO - chrome Browser is launched 
+2020-07-07 15:00:02,906 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2020-07-07 15:00:02,909 - io.github.bonigarcia.wdm.WebDriverManager -INFO - ====> http://tiny.cc/wdm-survey <====
+2020-07-07 15:00:03,257 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
+2020-07-07 15:00:03,270 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-07-07 15:00:06,675 - FCRMBDDProject -INFO - chrome Browser is launched 
+2020-07-07 15:01:32,633 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2020-07-07 15:01:32,635 - io.github.bonigarcia.wdm.WebDriverManager -INFO - ====> http://tiny.cc/wdm-survey <====
+2020-07-07 15:01:32,947 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
+2020-07-07 15:01:32,962 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-07-07 15:01:36,452 - FCRMBDDProject -INFO - chrome Browser is launched 
+2020-07-07 15:04:03,337 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2020-07-07 15:04:03,340 - io.github.bonigarcia.wdm.WebDriverManager -INFO - ====> http://tiny.cc/wdm-survey <====
+2020-07-07 15:04:03,684 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
+2020-07-07 15:04:03,695 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-07-07 15:04:07,300 - FCRMBDDProject -INFO - chrome Browser is launched 
