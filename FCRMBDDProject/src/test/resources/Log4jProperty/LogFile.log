@@ -231,3 +231,8 @@
 2020-07-04 01:07:25,571 - OrangeHRMApplication -INFO - Exiting the application and closing the browser
 2020-07-04 01:07:25,578 - OrangeHRMApplication -INFO - Starting with Browser Set Up
 2020-07-04 01:07:36,680 - OrangeHRMApplication -INFO - Exiting the application and closing the browser
+2020-07-07 14:39:06,353 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2020-07-07 14:39:06,356 - io.github.bonigarcia.wdm.WebDriverManager -INFO - ====> http://tiny.cc/wdm-survey <====
+2020-07-07 14:39:06,738 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 83.0.4103.39 (since Chrome 83 is installed in your machine)
+2020-07-07 14:39:06,752 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\anu13\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-07-07 14:39:10,222 - FCRMBDDProject -INFO - chrome Browser is launched 

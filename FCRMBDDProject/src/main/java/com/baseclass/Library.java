@@ -21,13 +21,15 @@ public class Library
 {
     protected static SeleniumUtility seleniumutility;
     protected static WebDriver driver;
-    protected Logger log = Logger.getLogger(Library.class);
+    protected Logger log = null;
 
     private Properties prop;
 
     public void launchApplication()
     {
         try {
+            log = Logger.getLogger("FCRMBDDProject");
+            PropertyConfigurator.configure("src/test/resources/Log4jProperty/log4j.properties");
             // Logger log = (Logger) LogManager.getLogger(Library.class.getName());
             FileInputStream fis = new FileInputStream("src/test/resources/Configuration/config.properties");
             prop = new Properties();
@@ -44,6 +46,7 @@ public class Library
             } else if (browser.equalsIgnoreCase("chrome")) {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
+
                 // ((ChromeDriver) driver).setFileDetector(new LocalFileDetector());
 
                 log.info("chrome Browser is launched ");
@@ -59,8 +62,7 @@ public class Library
             driver.get(url);
 
             seleniumutility = new SeleniumUtility(driver);
-            log = Logger.getLogger("FCRMBDDProject");
-            PropertyConfigurator.configure("./src/test/resources/Log4jProperty/log4j.properties");
+
         } catch (WebDriverException e) {
             // TODO: Add to Log file
             System.out.println("Browser could not be launched : " + e.toString());
