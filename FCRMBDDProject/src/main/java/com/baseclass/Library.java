@@ -2,6 +2,8 @@ package com.baseclass;
 
 import com.resusblefunctions.SeleniumUtility;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +21,7 @@ public class Library
 {
     protected static SeleniumUtility seleniumutility;
     protected static WebDriver driver;
-    // protected Logger log = Logger.getLogger(Library.class);
+    protected Logger log = Logger.getLogger(Library.class);
 
     private Properties prop;
 
@@ -44,7 +46,7 @@ public class Library
                 driver = new ChromeDriver();
                 // ((ChromeDriver) driver).setFileDetector(new LocalFileDetector());
 
-                // log.info("chrome Browser is launched ");
+                log.info("chrome Browser is launched ");
             } else if (browser.equals("headless")) {
                 // driver = new HtmlUnitDriver();
             } else {
@@ -57,6 +59,8 @@ public class Library
             driver.get(url);
 
             seleniumutility = new SeleniumUtility(driver);
+            log = Logger.getLogger("FCRMBDDProject");
+            PropertyConfigurator.configure("./src/test/resources/Log4jProperty/log4j.properties");
         } catch (WebDriverException e) {
             // TODO: Add to Log file
             System.out.println("Browser could not be launched : " + e.toString());
