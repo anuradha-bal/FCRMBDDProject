@@ -1,13 +1,9 @@
 package com.testrunner;
 
-import com.cucumber.listener.Reporter;
-
-import org.testng.annotations.AfterClass;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = "src/test/resources/Features/login.feature", plugin =
+@CucumberOptions(features = "src/test/resources/Features", plugin =
 {
  "pretty",
  "html:reports/cucumber-html-report",
@@ -20,12 +16,12 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 }, monochrome = true, dryRun = false)
 public class TestRunner extends AbstractTestNGCucumberTests
 {
-    @AfterClass
-    public static void extendReport()
-    {
-        Reporter.loadXMLConfig("src/test/resources/TestData/extent-config.xml");
-        Reporter.setSystemInfo("user", System.getProperty("user.name"));
-        Reporter.setSystemInfo("os", "Windows");
-        Reporter.setTestRunnerOutput("Sample test runner output message");
-    }
+    // @AfterClass
+    // public static void extendReport()
+    // {
+    // Reporter.loadXMLConfig("src/test/resources/TestData/extent-config.xml");
+    // Reporter.setSystemInfo("user", System.getProperty("user.name"));
+    // Reporter.setSystemInfo("os", "Windows");
+    // Reporter.setTestRunnerOutput("Sample test runner output message");
+    // }
 }
