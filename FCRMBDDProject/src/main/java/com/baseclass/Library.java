@@ -2,12 +2,9 @@ package com.baseclass;
 
 import com.resusblefunctions.SeleniumUtility;
 
-import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
@@ -43,14 +40,8 @@ public class Library
                 WebDriverManager.iedriver().setup();
                 driver = new FirefoxDriver();
             } else if (browser.equalsIgnoreCase("chrome")) {
-                // WebDriverManager.chromedriver().setup();
-                System.setProperty("webdriver.chrome.driver", "C:\\Software\\Selenium\\chromedriver_win32\\chromedriver.exe");
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE);
-                chromeOptions.addArguments("enable-automation");
-                chromeOptions.setPageLoadStrategy(PageLoadStrategy.NONE);
-
-                driver = new ChromeDriver(chromeOptions);
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
                 // ((ChromeDriver) driver).setFileDetector(new LocalFileDetector());
 
                 // log.info("chrome Browser is launched ");
