@@ -22,7 +22,7 @@ public class TestRunner extends AbstractTestNGCucumberTests
     @AfterClass
     public static void extendReport()
     {
-        Reporter.loadXMLConfig("src/test/resources/Configuration/extendConfig.xml");
+        Reporter.loadXMLConfig("src/test/resources/TestData/extent-config.xml");
         Reporter.setSystemInfo("user", System.getProperty("user.name"));
         Reporter.setSystemInfo("os", "Windows");
         Reporter.setTestRunnerOutput("Sample test runner output message");
