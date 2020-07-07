@@ -117,7 +117,7 @@ formatter.match({
   "location": "LoginStepDefinition.setup()"
 });
 formatter.result({
-  "duration": 8397349700,
+  "duration": 11866183200,
   "status": "passed"
 });
 formatter.match({
@@ -130,7 +130,7 @@ formatter.match({
   "location": "LoginStepDefinition.enterEmail(String)"
 });
 formatter.result({
-  "duration": 195888900,
+  "duration": 281257600,
   "status": "passed"
 });
 formatter.match({
@@ -143,28 +143,28 @@ formatter.match({
   "location": "LoginStepDefinition.enterPassword(String)"
 });
 formatter.result({
-  "duration": 113232600,
+  "duration": 144505000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.login()"
 });
 formatter.result({
-  "duration": 71403400,
+  "duration": 83770800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.loggedOn()"
 });
 formatter.result({
-  "duration": 1945294500,
+  "duration": 2611948700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.tearDown()"
 });
 formatter.result({
-  "duration": 736994200,
+  "duration": 1192454100,
   "status": "passed"
 });
 });
