@@ -2,3 +2,6 @@
 /reports/cucumber-html-report/*
 /reports/Extentreports/*
 /reports/Screenshots/*
+/reports/*
+/test-output/*
+/reports.js

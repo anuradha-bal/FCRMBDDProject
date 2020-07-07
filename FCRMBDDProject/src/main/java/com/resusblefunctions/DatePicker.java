@@ -41,11 +41,11 @@ public class DatePicker
         // Set Month
         int monthDiff = month - Calendar.getInstance().get(Calendar.MONTH);
         if (monthDiff > 0) {
-            for (int i = 0; i < monthDiff; i++) {
+            for (int i = 0; i < monthDiff - 1; i++) {
                 next.click();
             }
         } else {
-            for (int i = 0; i < monthDiff * (-1); i++) {
+            for (int i = 0; i < (monthDiff - 1) * (-1); i++) {
                 prev.click();
             }
         }

@@ -1,30 +1,13 @@
 package com.testrunner;
 
-import org.junit.runner.RunWith;
-import org.testng.annotations.AfterClass;
-
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features", plugin =
-{
- "pretty",
- "html:reports/cucumber-html-report",
- "junit:reports/cucumber-html-report/xml",
- "com.cucumber.listener.ExtentCucumberFormatter:reports/Extentreports/Extentreport.html"
-}, glue =
+@CucumberOptions(features = "src/test/resources/Features/login.feature", glue =
 {
  "com.stepdefinition"
 }, monochrome = true, dryRun = false)
-public class TestRunner
+public class TestRunner extends AbstractTestNGCucumberTests
 {
-    @AfterClass
-    public static void extendReport()
-    {
-        // Reporter.loadXMLConfig("src/test/resources/TestData/extent-config.xml");
-        // Reporter.setSystemInfo("user", System.getProperty("user.name"));
-        // Reporter.setSystemInfo("os", "Windows");
-        // Reporter.setTestRunnerOutput("Sample test runner output message");
-    }
+
 }

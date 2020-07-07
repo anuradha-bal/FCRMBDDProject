@@ -2,11 +2,13 @@ package com.baseclass;
 
 import com.resusblefunctions.SeleniumUtility;
 
+import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -41,11 +43,19 @@ public class Library
                 WebDriverManager.iedriver().setup();
                 driver = new FirefoxDriver();
             } else if (browser.equalsIgnoreCase("chrome")) {
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                // WebDriverManager.chromedriver().setup();
+                System.setProperty("webdriver.chrome.driver", "C:\\Software\\Selenium\\chromedriver_win32\\chromedriver.exe");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE);
+                chromeOptions.addArguments("enable-automation");
+                chromeOptions.setPageLoadStrategy(PageLoadStrategy.NONE);
+
+                driver = new ChromeDriver(chromeOptions);
+                // ((ChromeDriver) driver).setFileDetector(new LocalFileDetector());
+
                 // log.info("chrome Browser is launched ");
             } else if (browser.equals("headless")) {
-                driver = new HtmlUnitDriver();
+                // driver = new HtmlUnitDriver();
             } else {
                 System.out.println("only chrome, ie  and headless browsers are supported");
                 // TODO: Add to Log file and throw exception
