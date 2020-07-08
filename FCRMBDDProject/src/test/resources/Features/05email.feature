@@ -26,5 +26,5 @@ Then close the browser
 
 Examples:
 |name |type |sub|message|transport|cc|bcc|subject|template|body|
-|Geetu|Email|Reaching out about QA Role|Hi, This is Geetu|Google: sangitakpadhy@gmail.com|def@gmail.com|ijk@gmail.com|Reaching out about QA Role|Geetu|Hi, This is Sangita|
+|Geetu|Email|Reaching out about QA Role|Hi, This is Geetu|Google: ajaymohanjegan@gmail.com|def@gmail.com|ijk@gmail.com|Reaching out about QA Role|Geetu|Hi, This is Sangita|
 
